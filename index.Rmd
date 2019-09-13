@@ -1,0 +1,17 @@
+--- 
+title: "Advanced Structural Modeling"
+author: "Tyler Ransom"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+documentclass: book
+bibliography: [book.bib]
+biblio-style: apalike
+link-citations: yes
+github-repo: tyleransom/PhDmetrics
+description: "Class notes for advanced PhD econometrics class at University of Oklahoma."
+---
+
+# Prerequisites
+
+You should know everything in Econometrics I and Econometrics II before taking this class.

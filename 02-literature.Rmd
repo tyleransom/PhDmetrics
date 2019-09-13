@@ -1,0 +1,61 @@
+# Static Discrete Choice Models
+
+## In this chapter
+
+1.  Describe static discrete choice models
+
+2.  Derive logit probabilities
+
+3.  Show how to estimate logits and multinomial logits
+
+4.  Cover the IIA property
+
+5.  Discuss expected utility and consumer surplus
+
+## Notation
+
+Let $d_i$ indicate the choice individual $i$ makes where
+$d_i\in\{1,\cdots, J\}$. Individuals choose $d$ to maximize their
+utility, $U$. $U$ generally is written as:
+$$U_{ij}=u_{ij}+\varepsilon_{ij}$$ where:
+
+1.  $u_{ij}$ relates observed factors to the utility individual $i$
+    receives from choosing option $j$
+
+2.  $\varepsilon_{ij}$ are unobserved to the econometrician but observed
+    to the individual
+
+3.  $d_{ij}=1$ if $u_{ij}+\varepsilon_{ij}>u_{ij'}+\varepsilon_{ij'}$
+    for all $j'\neq j$
+
+## Probabilities
+
+With the $\varepsilon$'s unobserved, the probability of individual $i$
+making choice $j$ is given by: $$\begin{aligned}
+P_{ij}&=\Pr(u_{ij}+\varepsilon_{ij}>u_{ij'}+\varepsilon_{ij'}\forall j'\neq j)\\
+&=\Pr(\varepsilon_{ij'}-\varepsilon_{ij}<u_{ij}-u_{ij'}\forall j'\neq j)\\
+&=\int_{\varepsilon}I(\varepsilon_{ij'}-\varepsilon_{ij}<u_{ij}-u_{ij'}\forall j'\neq j)f(\varepsilon)d\varepsilon\end{aligned}$$
+Note that, regardless of what distributional assumptions are made on the
+$\varepsilon$'s, the probability of choosing a particular option does
+not change when we:
+
+1.  Add a constant to the utility of all options (utility is relative to
+    one of the options, only differences in utility matter)
+
+2.  Multiply by a positive number (need to scale something, generally
+    the variance of the $\varepsilon$'s)
+
+## Variables
+
+Suppose we have: $$\begin{aligned}
+u_{i1}&=\alpha Male_i+\beta_1 X_i + \gamma Z_1\\
+u_{i2}&=\alpha Male_i+\beta_2 X_i+\gamma Z_2\end{aligned}$$ Since only
+differences in utility matter:
+$$u_{i1}-u_{i2}=(\beta_1-\beta_2)X_i+\gamma (Z_1-Z_2)$$ Thus, we cannot
+tell whether men are happier than women, but can tell whether men have a
+preference for a particular option over another. We can only obtain
+differenced coefficient estimates on $X$'s, and can obtain an estimate
+of a coefficient that is constant across choices only if the variable it
+is hitting varies by choice.
+
+[^1]: Based on Lecture Notes by Peter Arcidiacono
