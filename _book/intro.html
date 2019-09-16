@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 2 Introduction | Advanced Structural Modeling</title>
+  <title>Chapter 2 What is Structural Modeling? | Advanced Structural Modeling</title>
   <meta name="description" content="Class notes for advanced PhD econometrics class at University of Oklahoma." />
   <meta name="generator" content="bookdown 0.13 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 2 Introduction | Advanced Structural Modeling" />
+  <meta property="og:title" content="Chapter 2 What is Structural Modeling? | Advanced Structural Modeling" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="tyleransom/PhDmetrics" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 2 Introduction | Advanced Structural Modeling" />
+  <meta name="twitter:title" content="Chapter 2 What is Structural Modeling? | Advanced Structural Modeling" />
   
   <meta name="twitter:description" content="Class notes for advanced PhD econometrics class at University of Oklahoma." />
   
@@ -82,11 +82,15 @@ code > span.er { color: #ff0000; font-weight: bold; }
       <nav role="navigation">
 
 <ul class="summary">
-<li><a href="./">A Minimal Book Example</a></li>
+<li><a href="./">Advanced Structural Modeling</a></li>
 
 <li class="divider"></li>
 <li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Prerequisites</a></li>
-<li class="chapter" data-level="2" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>2</b> Introduction</a></li>
+<li class="chapter" data-level="2" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>2</b> What is Structural Modeling?</a><ul>
+<li class="chapter" data-level="2.1" data-path="intro.html"><a href="intro.html#advantages-and-disadvantages-of-structural-models"><i class="fa fa-check"></i><b>2.1</b> Advantages and Disadvantages of Structural Models</a></li>
+<li class="chapter" data-level="2.2" data-path="intro.html"><a href="intro.html#a-simple-structural-model"><i class="fa fa-check"></i><b>2.2</b> A simple structural model</a></li>
+<li class="chapter" data-level="2.3" data-path="intro.html"><a href="intro.html#other-examples"><i class="fa fa-check"></i><b>2.3</b> Other examples</a></li>
+</ul></li>
 <li class="chapter" data-level="3" data-path="static-discrete-choice-models.html"><a href="static-discrete-choice-models.html"><i class="fa fa-check"></i><b>3</b> Static Discrete Choice Models</a><ul>
 <li class="chapter" data-level="3.1" data-path="static-discrete-choice-models.html"><a href="static-discrete-choice-models.html#in-this-chapter"><i class="fa fa-check"></i><b>3.1</b> In this chapter</a></li>
 <li class="chapter" data-level="3.2" data-path="static-discrete-choice-models.html"><a href="static-discrete-choice-models.html#notation"><i class="fa fa-check"></i><b>3.2</b> Notation</a></li>
@@ -121,7 +125,33 @@ code > span.er { color: #ff0000; font-weight: bold; }
 
             <section class="normal" id="section-">
 <div id="intro" class="section level1">
-<h1><span class="header-section-number">Chapter 2</span> Introduction</h1>
+<h1><span class="header-section-number">Chapter 2</span> What is Structural Modeling?</h1>
+<p>In this chapter, I explain what structural modeling is and how it can be useful to economists. A nice treatment of this topic is <span class="citation">Reiss and Wolak (2007)</span>, which I borrow some materials from.</p>
+<p>In the simplest sense, structural modeling (or, interchangeably, structural econometrics) is a combination of economic and statistical models. Structural models are used in every empirical field of economics: from dynamic stochastic general equilibrium (DSGE) models in macroeconomics to models of firm decision-making in industrial organization to individual choice models in labor.</p>
+<p>More formally, a structural model is an attempt to estimate <strong>policy-invariant fundamental parameters</strong>, also known as structural parameters. The parameter estimates can then be used to predict outcomes in a counterfactual setting. Typically, structural parameters are those parameters which enter an agent’s utility function or production function (and cost function). Structural models may also incorporate constraints faced by the agent(s), strategic behavior among competing agents, or other aspects of economic theory such as moral hazard in a principal-agent scenario. Once the econometrician knows the preferences, production technology, and constraints of the agent(s), she can predict how the agent(s) will behave in a new scenario for which there is no existing data.</p>
+<p>Structural models are especially useful in settings where an experiment cannot be undertaken. In this case, one must specify how the unobservables are related to the observables, because this relationship cannot be ignored without the randomization that occurs in an experiment.</p>
+<div id="advantages-and-disadvantages-of-structural-models" class="section level2">
+<h2><span class="header-section-number">2.1</span> Advantages and Disadvantages of Structural Models</h2>
+<p>Many economists shy away from structural models because using them forces the researcher to make strong assumptions about how the world works. In essence a structural model is a researcher’s view of the world. To the extent that the model includes unreasonable or unrealistic assumptions, one must discount any results derived from the model.</p>
+<p>Another reason some economists dislike structural models is because they can be difficult to estimate. Structural models typically are nonlinear (even if they are linear-in-parameters) and estimation typically requires using maximum likelihood or method of moments estimation as opposed to linear regression techniques.</p>
+<p>The main advantage of using a structural model is that it can be a powerful tool for predicting the effects of potential policies. If one knows the data generating process (DGP), then one does not need to do any statistical estimation. Structural modeling is an attempt to estimate the parameters of the DGP. Once the DGP is known, one can use it to simulate what might happen under counterfactual scenarios.</p>
+</div>
+<div id="a-simple-structural-model" class="section level2">
+<h2><span class="header-section-number">2.2</span> A simple structural model</h2>
+<p>One toy example that often appears in introductory econometrics textbooks is the effect of education on earnings. Typically, the textbook presents an equation like this: <span class="math">\[\log\left(wage_{i}\right)=educ_{i}+\varepsilon_{i}\]</span> where <span class="math">\(wage_i\)</span> is the individual’s wage as an adult, and <span class="math">\(educ_i\)</span> is the individual’s years of completed education (e.g. 12 for a high school graduate, 16 for a college graduate, etc.).</p>
+</div>
+<div id="other-examples" class="section level2">
+<h2><span class="header-section-number">2.3</span> Other examples</h2>
+<ul>
+<li>Tuition subsidy (<span class="citation">Keane and Wolpin (1997)</span>)</li>
+<li>IO demand estimation (BLP, etc.)</li>
+<li>IO production function estimation (Collard-Wexler papers)</li>
+<li>IO entry games (…)</li>
+<li>Trade markups (<span class="citation">De Loecker, Eeckhout, and Unger (2018)</span>)</li>
+<li>Development (…)</li>
+<li>Migration (<span class="citation">Kennan and Walker (2011)</span>)</li>
+<li>Regional demand and commuting flows (<span class="citation">Monte, Redding, and Rossi-Hansberg (2018)</span>)</li>
+</ul>
 <p>You can label chapter and section titles using <code>{#label}</code> after them, e.g., we can reference Chapter <a href="intro.html#intro">2</a>. If you do not manually label them, there will be automatic labels anyway, e.g., Chapter <a href="methods.html#methods">4</a>.</p>
 <p>Figures and tables with captions will be placed in <code>figure</code> and <code>table</code> environments, respectively.</p>
 <pre class="sourceCode r"><code class="sourceCode r"><span class="kw">par</span>(<span class="dt">mar =</span> <span class="kw">c</span>(<span class="dv">4</span>, <span class="dv">4</span>, .<span class="dv">1</span>, .<span class="dv">1</span>))
@@ -295,6 +325,7 @@ Figure 2.1: Here is a nice figure!
 
 
 </div>
+</div>
             </section>
 
           </div>
@@ -331,7 +362,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/rstudio/bookdown-demo/edit/master/01-intro.Rmd",
+"link": "https://github.com/tyleransom/PhDmetrics/edit/master/01-intro.Rmd",
 "text": "Edit"
 },
 "history": {
