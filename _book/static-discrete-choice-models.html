@@ -24,7 +24,7 @@
 <meta name="author" content="Tyler Ransom" />
 
 
-<meta name="date" content="2019-09-13" />
+<meta name="date" content="2019-09-16" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -50,41 +50,23 @@
 
 
 <style type="text/css">
-div.sourceCode { overflow-x: auto; }
 table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
   margin: 0; padding: 0; vertical-align: baseline; border: none; }
 table.sourceCode { width: 100%; line-height: 100%; }
 td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
 td.sourceCode { padding-left: 5px; }
-code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code > span.dt { color: #902000; } /* DataType */
-code > span.dv { color: #40a070; } /* DecVal */
-code > span.bn { color: #40a070; } /* BaseN */
-code > span.fl { color: #40a070; } /* Float */
-code > span.ch { color: #4070a0; } /* Char */
-code > span.st { color: #4070a0; } /* String */
-code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code > span.ot { color: #007020; } /* Other */
-code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code > span.fu { color: #06287e; } /* Function */
-code > span.er { color: #ff0000; font-weight: bold; } /* Error */
-code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-code > span.cn { color: #880000; } /* Constant */
-code > span.sc { color: #4070a0; } /* SpecialChar */
-code > span.vs { color: #4070a0; } /* VerbatimString */
-code > span.ss { color: #bb6688; } /* SpecialString */
-code > span.im { } /* Import */
-code > span.va { color: #19177c; } /* Variable */
-code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code > span.op { color: #666666; } /* Operator */
-code > span.bu { } /* BuiltIn */
-code > span.ex { } /* Extension */
-code > span.pp { color: #bc7a00; } /* Preprocessor */
-code > span.at { color: #7d9029; } /* Attribute */
-code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code > span.kw { color: #007020; font-weight: bold; }
+code > span.dt { color: #902000; }
+code > span.dv { color: #40a070; }
+code > span.bn { color: #40a070; }
+code > span.fl { color: #40a070; }
+code > span.ch { color: #4070a0; }
+code > span.st { color: #4070a0; }
+code > span.co { color: #60a0b0; font-style: italic; }
+code > span.ot { color: #007020; }
+code > span.al { color: #ff0000; font-weight: bold; }
+code > span.fu { color: #06287e; }
+code > span.er { color: #ff0000; font-weight: bold; }
 </style>
 
 <link rel="stylesheet" href="style.css" type="text/css" />
@@ -152,29 +134,30 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 </div>
 <div id="notation" class="section level2">
 <h2><span class="header-section-number">3.2</span> Notation</h2>
-<p>Let <span class="math inline">\(d_i\)</span> indicate the choice individual <span class="math inline">\(i\)</span> makes where <span class="math inline">\(d_i\in\{1,\cdots, J\}\)</span>. Individuals choose <span class="math inline">\(d\)</span> to maximize their utility, <span class="math inline">\(U\)</span>. <span class="math inline">\(U\)</span> generally is written as: <span class="math display">\[U_{ij}=u_{ij}+\varepsilon_{ij}\]</span> where:</p>
+<p>Let <span class="math">\(d_i\)</span> indicate the choice individual <span class="math">\(i\)</span> makes where <span class="math">\(d_i\in\{1,\cdots, J\}\)</span>. Individuals choose <span class="math">\(d\)</span> to maximize their utility, <span class="math">\(U\)</span>. <span class="math">\(U\)</span> generally is written as: <span class="math">\[U_{ij}=u_{ij}+\varepsilon_{ij}\]</span> where:</p>
 <ol style="list-style-type: decimal">
-<li><p><span class="math inline">\(u_{ij}\)</span> relates observed factors to the utility individual <span class="math inline">\(i\)</span> receives from choosing option <span class="math inline">\(j\)</span></p></li>
-<li><p><span class="math inline">\(\varepsilon_{ij}\)</span> are unobserved to the econometrician but observed to the individual</p></li>
-<li><p><span class="math inline">\(d_{ij}=1\)</span> if <span class="math inline">\(u_{ij}+\varepsilon_{ij}&gt;u_{ij&#39;}+\varepsilon_{ij&#39;}\)</span> for all <span class="math inline">\(j&#39;\neq j\)</span></p></li>
+<li><p><span class="math">\(u_{ij}\)</span> relates observed factors to the utility individual <span class="math">\(i\)</span> receives from choosing option <span class="math">\(j\)</span></p></li>
+<li><p><span class="math">\(\varepsilon_{ij}\)</span> are unobserved to the econometrician but observed to the individual</p></li>
+<li><p><span class="math">\(d_{ij}=1\)</span> if <span class="math">\(u_{ij}+\varepsilon_{ij}&gt;u_{ij&#39;}+\varepsilon_{ij&#39;}\)</span> for all <span class="math">\(j&#39;\neq j\)</span></p></li>
 </ol>
 </div>
 <div id="probabilities" class="section level2">
 <h2><span class="header-section-number">3.3</span> Probabilities</h2>
-<p>With the <span class="math inline">\(\varepsilon\)</span>’s unobserved, the probability of individual <span class="math inline">\(i\)</span> making choice <span class="math inline">\(j\)</span> is given by: <span class="math display">\[\begin{aligned}
+<p>With the <span class="math">\(\varepsilon\)</span>’s unobserved, the probability of individual <span class="math">\(i\)</span> making choice <span class="math">\(j\)</span> is given by: <span class="math">\[\begin{aligned}
 P_{ij}&amp;=\Pr(u_{ij}+\varepsilon_{ij}&gt;u_{ij&#39;}+\varepsilon_{ij&#39;}\forall j&#39;\neq j)\\
 &amp;=\Pr(\varepsilon_{ij&#39;}-\varepsilon_{ij}&lt;u_{ij}-u_{ij&#39;}\forall j&#39;\neq j)\\
-&amp;=\int_{\varepsilon}I(\varepsilon_{ij&#39;}-\varepsilon_{ij}&lt;u_{ij}-u_{ij&#39;}\forall j&#39;\neq j)f(\varepsilon)d\varepsilon\end{aligned}\]</span> Note that, regardless of what distributional assumptions are made on the <span class="math inline">\(\varepsilon\)</span>’s, the probability of choosing a particular option does not change when we:</p>
+&amp;=\int_{\varepsilon}I(\varepsilon_{ij&#39;}-\varepsilon_{ij}&lt;u_{ij}-u_{ij&#39;}\forall j&#39;\neq j)f(\varepsilon)d\varepsilon\end{aligned}\]</span> Note that, regardless of what distributional assumptions are made on the <span class="math">\(\varepsilon\)</span>’s, the probability of choosing a particular option does not change when we:</p>
 <ol style="list-style-type: decimal">
 <li><p>Add a constant to the utility of all options (utility is relative to one of the options, only differences in utility matter)</p></li>
-<li><p>Multiply by a positive number (need to scale something, generally the variance of the <span class="math inline">\(\varepsilon\)</span>’s)</p></li>
+<li><p>Multiply by a positive number (need to scale something, generally the variance of the <span class="math">\(\varepsilon\)</span>’s)</p></li>
 </ol>
 </div>
 <div id="variables" class="section level2">
 <h2><span class="header-section-number">3.4</span> Variables</h2>
-<p>Suppose we have: <span class="math display">\[\begin{aligned}
+<p>Suppose we have: <span class="math">\[\begin{aligned}
 u_{i1}&amp;=\alpha Male_i+\beta_1 X_i + \gamma Z_1\\
-u_{i2}&amp;=\alpha Male_i+\beta_2 X_i+\gamma Z_2\end{aligned}\]</span> Since only differences in utility matter: <span class="math display">\[u_{i1}-u_{i2}=(\beta_1-\beta_2)X_i+\gamma (Z_1-Z_2)\]</span> Thus, we cannot tell whether men are happier than women, but can tell whether men have a preference for a particular option over another. We can only obtain differenced coefficient estimates on <span class="math inline">\(X\)</span>’s, and can obtain an estimate of a coefficient that is constant across choices only if the variable it is hitting varies by choice.</p>
+u_{i2}&amp;=\alpha Male_i+\beta_2 X_i+\gamma Z_2\end{aligned}\]</span> Since only differences in utility matter: <span class="math">\[u_{i1}-u_{i2}=(\beta_1-\beta_2)X_i+\gamma (Z_1-Z_2)\]</span> Thus, we cannot tell whether men are happier than women, but can tell whether men have a preference for a particular option over another. We can only obtain differenced coefficient estimates on <span class="math">\(X\)</span>’s, and can obtain an estimate of a coefficient that is constant across choices only if the variable it is hitting varies by choice.</p>
+
 
 </div>
 </div>
@@ -214,7 +197,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/rstudio/bookdown-demo/edit/master/02-literature.Rmd",
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/02-static-choice.Rmd",
 "text": "Edit"
 },
 "history": {

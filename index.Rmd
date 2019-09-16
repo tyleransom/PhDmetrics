@@ -14,4 +14,4 @@ description: "Class notes for advanced PhD econometrics class at University of O
 
 # Prerequisites
 
-You should know everything in Econometrics I and Econometrics II before taking this class.
+You should know everything in PhD Econometrics I and Econometrics II before taking this class.

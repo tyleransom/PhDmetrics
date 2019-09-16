@@ -1,4 +1,35 @@
-# Introduction {#intro}
+# What is Structural Modeling? {#intro}
+
+In this chapter, I explain what structural modeling is and how it can be useful to economists. A nice treatment of this topic is @reissWolak2007, which I borrow some materials from.
+
+In the simplest sense, structural modeling (or, interchangeably, structural econometrics) is a combination of economic and statistical models. Structural models are used in every empirical field of economics: from dynamic stochastic general equilibrium (DSGE) models in macroeconomics to models of firm decision-making in industrial organization to individual choice models in labor.
+
+More formally, a structural model is an attempt to estimate **policy-invariant fundamental parameters**, also known as structural parameters. The parameter estimates can then be used to predict outcomes in a counterfactual setting. Typically, structural parameters are those parameters which enter an agent's utility function or production function (and cost function). Structural models may also incorporate constraints faced by the agent(s), strategic behavior among competing agents, or other aspects of economic theory such as moral hazard in a principal-agent scenario. Once the econometrician knows the preferences, production technology, and constraints of the agent(s), she can predict how the agent(s) will behave in a new scenario for which there is no existing data.
+
+Structural models are especially useful in settings where an experiment cannot be undertaken. In this case, one must specify how the unobservables are related to the observables, because this relationship cannot be ignored without the randomization that occurs in an experiment.
+
+## Advantages and Disadvantages of Structural Models
+
+Many economists shy away from structural models because using them forces the researcher to make strong assumptions about how the world works. In essence a structural model is a researcher's view of the world. To the extent that the model includes unreasonable or unrealistic assumptions, one must discount any results derived from the model.
+
+Another reason some economists dislike structural models is because they can be difficult to estimate. Structural models typically are nonlinear (even if they are linear-in-parameters) and estimation typically requires using maximum likelihood or method of moments estimation as opposed to linear regression techniques.
+
+The main advantage of using a structural model is that it can be a powerful tool for predicting the effects of potential policies. If one knows the data generating process (DGP), then one does not need to do any statistical estimation. Structural modeling is an attempt to estimate the parameters of the DGP. Once the DGP is known, one can use it to simulate what might happen under counterfactual scenarios.
+
+## A simple structural model
+
+One toy example that often appears in introductory econometrics textbooks is the effect of education on earnings. Typically, the textbook presents an equation like this:  $$\log\left(wage_{i}\right)=educ_{i}+\varepsilon_{i}$$ where $wage_i$ is the individual's wage as an adult, and $educ_i$ is the individual's years of completed education (e.g. 12 for a high school graduate, 16 for a college graduate, etc.).
+
+## Other examples
+
+* Tuition subsidy (@keaneWolpin1997)
+* IO demand estimation (BLP, etc.)
+* IO production function estimation (Collard-Wexler papers)
+* IO entry games (...)
+* Trade markups (@deLoecker_al2018)
+* Development (...)
+* Migration (@kennanWalker2011)
+* Regional demand and commuting flows (@monte_al2018)
 
 You can label chapter and section titles using `{#label}` after them, e.g., we can reference Chapter \@ref(intro). If you do not manually label them, there will be automatic labels anyway, e.g., Chapter \@ref(methods).
 
