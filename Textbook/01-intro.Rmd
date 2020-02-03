@@ -18,7 +18,7 @@ The main advantage of using a structural model is that it can be a powerful tool
 
 ## A simple structural model
 
-One toy example that often appears in introductory econometrics textbooks is the effect of education on earnings. Typically, the textbook presents an equation like this:  $$\log\left(wage_{i}\right)=educ_{i}+\varepsilon_{i}$$ where $wage_i$ is the individual's wage as an adult, and $educ_i$ is the individual's years of completed education (e.g. 12 for a high school graduate, 16 for a college graduate, etc.).
+One toy example that often appears in introductory econometrics textbooks is the effect of education on earnings. Typically, the textbook presents an equation like this:  $$\log\left(wage_{i}\right)=\beta_0 + \beta_{1}educ_{i}+\varepsilon_{i}$$ where $wage_i$ is the individual's wage as an adult, and $educ_i$ is the individual's years of completed education (e.g. 12 for a high school graduate, 16 for a college graduate, etc.).
 
 ## Other examples
 
